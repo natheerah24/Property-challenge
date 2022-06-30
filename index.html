@@ -19,10 +19,9 @@
   </head>
   <body>
     <section id="Landing">
-      <button><a href="./admin.html">Admin Page</a></button>
       <div class="l-display">
-        <h1>Welcome to Houzez</h1>
-        <h3>
+        <h1 class="landing-head">Welcome to Houzez</h1>
+        <h3 class="landing-head">
           Houzez is an innovative real estate WordPress theme that helps to
           ensure your website's success in this super-competitive market.
         </h3>
@@ -35,204 +34,101 @@
     <div id="card" class="card shadow-lg">
       <div class="row p-3" id="card-content">
         <div class="col-lg-3">
-          <p class="text-dark">looking for</p>
+          <p>looking for</p>
           <div>
-      <label for="propertySort" class="form-label"> Sort by property type:</label>
-      <select
-        name="propertySort"
-        id="propertySort"
-        onchange="propertySort()"
-      >
-        <option value="all">all</option>
-        <option value="Apartment">Apartment</option>
-        <option value="Complex">Complex</option>
-        <option value="Loft">Loft</option>
-      </select>
-    </div>
+            <label for="propertySort" class="form-label">
+              Sort by property type:</label
+            >
+            <select
+              name="propertySort"
+              id="propertySort"
+              onchange="propertySort()"
+              class="sorting"
+            >
+              <option value="all">all</option>
+              <option value="Apartment">Apartment</option>
+              <option value="Complex">Complex</option>
+              <option value="Loft">Loft</option>
+            </select>
+          </div>
         </div>
         <div class="col-lg-3">
           <p>location</p>
-             <div>
-      <label for="LocationSort" class="form-label"> Sort by location:</label>
-      <select
-        name="LocationSort"
-        id="LocationSort"
-        onchange="LocationSort()"
-      >
-        <option value="all">all</option>
-        <option value="New York">New York</option>
-        <option value="Los Angeles">Los Angeles</option>
-        <option value="Miami">Miami</option>
-        <option value="chicago">chicago</option>
-      </select>
-    </div>
+          <div>
+            <label for="LocationSort" class="form-label">
+              Sort by location:</label
+            >
+            <select
+              name="LocationSort"
+              id="LocationSort"
+              onchange="LocationSort()"
+              class="sorting"
+            >
+              <option value="all">all</option>
+              <option value="New York">New York</option>
+              <option value="Los Angeles">Los Angeles</option>
+              <option value="Miami">Miami</option>
+              <option value="chicago">chicago</option>
+            </select>
+          </div>
         </div>
         <div class="col-lg-3">
           <p>Property Size</p>
-           <div>
-      <label for="bedroomsSort" class="form-label"> Sort by bedrooms:</label>
-      <select
-        name="bedroomsSort"
-        id="bedroomsSort"
-        onchange="bedroomsSort()"
-      >
-        <option value="all">all</option>
-        <option value="1">1</option>
-        <option value="2">2</option>
-        <option value="3">3</option>
-        <option value="4">4</option>
-        <option value="5">5</option>
-      </select>
-    </div>
+          <div>
+            <label for="bedroomsSort" class="form-label">
+              Sort by bedrooms:</label
+            >
+            <select
+              name="bedroomsSort"
+              id="bedroomsSort"
+              onchange="bedroomsSort()"
+              class="sorting"
+            >
+              <option value="all">all</option>
+              <option value="1">1</option>
+              <option value="2">2</option>
+              <option value="3">3</option>
+              <option value="4">4</option>
+              <option value="5">5</option>
+            </select>
+          </div>
         </div>
         <div class="col-lg-3">
           <p>Your Budget</p>
           <div>
-      <label for="priceSort" class="form-label"> Sort by price:</label>
-      <select
-        name="priceSort"
-        id="priceSort"
-        onchange="priceSort()"
-      >
-        <option value="all">all</option>
-          <option value="$1,600/mo">$1,600/mo</option>
-           <option value="$2,800/mo">$2,800/mo</option>
-           <option value="$3,500/mo">$3,500/mo</option>
-          <option value="$3,700/mo">$3,700/mo</option>
-           <option value="$3,750/mo">$3,750/mo</option>
-          <option value="$4,500/mo">$4,500/mo</option>
-            <option value="$11,000/mo">$11,000/mo</option>
-           <option value="$13,000/mo">$13,000/mo</option>
-      </select>
-    </div>
-        </div>
-        <div class="btn-conatiner">
-          <button id="search-button" class="btn m-2">search</button>
+            <label for="priceSort" class="form-label"> Sort by price:</label>
+            <select
+              name="priceSort"
+              id="priceSort"
+              onchange="priceSort()"
+              class="sorting"
+            >
+              <option value="all">all</option>
+              <option value="$1,600/mo">$1,600/mo</option>
+              <option value="$2,800/mo">$2,800/mo</option>
+              <option value="$3,500/mo">$3,500/mo</option>
+              <option value="$3,700/mo">$3,700/mo</option>
+              <option value="$3,750/mo">$3,750/mo</option>
+              <option value="$4,500/mo">$4,500/mo</option>
+              <option value="$11,000/mo">$11,000/mo</option>
+              <option value="$13,000/mo">$13,000/mo</option>
+            </select>
+          </div>
         </div>
       </div>
     </div>
     <section>
+      <h1 class="display-head">Check Our Selection Of Finest Properties</h1>
+      <p class="display-head">
+        Lorem ipsum dolor sit amet, consectetur adipisicing elit
+      </p>
       <div class="container">
         <div class="row">
-          <div id="listings" class="listings">
-            <h1>Check Our Selection Of Finest Properties</h1>
-            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit</p>
+          <div id="listings" class="listings"></div>
         </div>
       </div>
     </section>
 
-    <!-- <section id="listings">
-      <div class="products">
-        <div class="product-card">
-          <div class="cell-1">
-            <div class="product-image">
-              <div class="image-container">
-                <img src="./assets//car-1.jpg" />
-              </div>
-            </div>
-            <div class="cell-2">
-              <div class="product-info">
-                <h4>Design apartment</h4>
-                <p>Quincy St, Broadway, New York, NY 33135, USA</p>
-                <div class="icons">
-                  <i class="fa-solid fa-bed">3</i>
-                  <i class="fa-solid fa-shower">2</i>
-                  <i class="fa-solid fa-car">1</i>
-                  <i class="fa-solid fa-ruler-combined"></i>
-                  <p>2560 Sq Ft</p>
-                </div>
-                <h5>Apartment</h5>
-              </div>
-            </div>
-          </div>
-          <div class="product-footer">
-            <div class="mre-inf">
-              <div class="mre-info-style">
-                <i class="fa-solid fa-user"></i>
-
-                <h5>Michelle Ramirez</h5>
-              </div>
-              <div class="mre-info-style">
-                <i class="fa-solid fa-paperclip"></i>
-                <h5>2 years ago</h5>
-              </div>
-            </div>
-          </div>
-        </div>
-        <div class="product-card">
-          <div class="cell-1">
-            <div class="product-image">
-              <div class="image-container">
-                <img src="./assets//car-2.jpg" />
-              </div>
-            </div>
-            <div class="cell-2">
-              <div class="product-info">
-                <h4>Renovated Studio</h4>
-                <p>194 Mercer Street, 627 Broadway, New York, NY 10012, USA</p>
-                <div class="icons">
-                  <i class="fa-solid fa-bed">4</i>
-                  <i class="fa-solid fa-shower">2</i>
-                  <i class="fa-solid fa-car">1</i>
-                  <i class="fa-solid fa-ruler-combined"></i>
-                  <p>1200 Sq Ft</p>
-                </div>
-                <h5>Studio</h5>
-              </div>
-            </div>
-          </div>
-          <div class="product-footer">
-            <div class="mre-inf">
-              <div class="mre-info-style">
-                <i class="fa-solid fa-user"></i>
-
-                <h5>Mike Moore</h5>
-              </div>
-              <div class="mre-info-style">
-                <i class="fa-solid fa-paperclip"></i>
-                <h5>2 years ago</h5>
-              </div>
-            </div>
-          </div>
-        </div>
-        <div class="product-card">
-          <div class="cell-1">
-            <div class="product-image">
-              <div class="image-container">
-                <img src="./assets//car-3.jpg" />
-              </div>
-            </div>
-            <div class="cell-2">
-              <div class="product-info">
-                <h4>New apartment nice view</h4>
-                <p>8100 S Ashland Ave, Chicago, IL 60620, USA</p>
-                <div class="icons">
-                  <i class="fa-solid fa-bed p-1">3</i>
-                  <i class="fa-solid fa-shower">1</i>
-                  <i class="fa-solid fa-car">1</i>
-                  <i class="fa-solid fa-ruler-combined"></i>
-                  <p>1789 Sq Ft</p>
-                </div>
-                <h5>Apartment</h5>
-              </div>
-            </div>
-          </div>
-          <div class="product-footer">
-            <div class="mre-inf">
-              <div class="mre-info-style">
-                <i class="fa-solid fa-user"></i>
-
-                <h5>Samuel Palmer</h5>
-              </div>
-              <div class="mre-info-style">
-                <i class="fa-solid fa-paperclip"></i>
-                <h5>2 years ago</h5>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-    </section> -->
     <footer>
       <div class="row futer">
         <div class="col-sm-4">
@@ -284,6 +180,11 @@
               Houzez is a premium WordPress theme for Designers & Real Estate
               Agents.
             </p>
+            <div class="admin-btn">
+              <button class="btn btn-primary">
+                <a href="./admin.html">Admin Page</a>
+              </button>
+            </div>
           </div>
         </div>
       </div>

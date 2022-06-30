@@ -16,9 +16,9 @@ function readData(listings) {
           <td>
         ${listings.size}
           </td>
-          <td> <button onclick="deleteListings(${i})">delete</buttonn><button
+          <td> <button onclick="deleteListings(${i})" class="btn btn-danger admin-btn">delete</buttonn><button
           type="button"
-          class="btn btn-danger"
+          class="btn btn-danger admin-btn"
           data-bs-toggle="modal"
           data-bs-target="#edit${i}"
         >

@@ -3,8 +3,17 @@
   padding: 0;
   box-sizing: border-box;
 }
+body {
+  background-color: #00335a;
+}
 .icons i {
   margin: 8px;
+}
+.btn:hover {
+  color: rgb(0, 0, 0);
+}
+a:hover {
+  color: black;
 }
 .icons p {
   font-size: 12px;
@@ -22,9 +31,11 @@ a {
   text-decoration: none;
   color: white;
 }
+.admin-btn {
+  margin-top: 20px;
+}
 #Landing {
-  background: linear-gradient(rgba(0, 0, 0, 0.45), rgba(0, 0, 0, 0.45)),
-    url(/assets/landing.jpg);
+  background: linear-gradient(#00335a77, #00335a77), url(/assets/landing.jpg);
   min-height: 100vh;
   background-position: center;
   background-size: cover;
@@ -39,7 +50,9 @@ a {
   vertical-align: middle;
   padding: 0 30px;
 }
-
+.landing-head {
+  font-family: auto;
+}
 #inquiry-form {
   background: linear-gradient(rgba(0, 0, 0, 0.45), rgba(0, 0, 0, 0.45)),
     url(/assets/car-1.jpg);
@@ -93,15 +106,18 @@ footer {
   display: table;
   width: 100%;
 }
-#discover {
+/* #discover {
   min-height: 100vh;
-}
+} */
 #card {
   margin-left: 10%;
   margin-right: 2rem;
   width: 80%;
   height: 10rem;
   margin-top: -4rem;
+  background-color: #004274;
+  color: white;
+  margin-bottom: 2rem;
 }
 #card-content {
   opacity: 1;
@@ -241,4 +257,43 @@ form button {
   top: 100px;
   color: white;
   margin-top: 90px;
+}
+.sorting {
+  display: flex;
+  border-radius: 50px;
+  width: 6rem;
+}
+tbody#admin-listings {
+  color: white;
+}
+td:hover {
+  color: white;
+}
+.display-head {
+  font-family: auto;
+  color: white;
+  text-align: center;
+}
+.socials i:hover {
+  color: #004274;
+}
+@media only screen and (max-width: 1000px) {
+  #card {
+    height: fit-content;
+  }
+  body {
+    background-color: #00335a;
+    padding-left: 10px;
+  }
+  .socials {
+    display: flex;
+    justify-content: flex-end;
+    gap: 10px;
+    padding-top: 20px;
+    padding-right: 88px;
+  }
+  .admin-btn {
+    margin-top: 20px;
+    padding-left: 56px;
+  }
 }
