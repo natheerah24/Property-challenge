@@ -1,0 +1,240 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+.icons i {
+  margin: 8px;
+}
+.icons p {
+  font-size: 12px;
+  margin: 8px;
+}
+.icons {
+  display: flex;
+  flex-wrap: nowrap;
+}
+#admin-img {
+  width: 20rem;
+}
+
+#Landing {
+  background: linear-gradient(rgba(0, 0, 0, 0.45), rgba(0, 0, 0, 0.45)),
+    url(/assets/landing.jpg);
+  min-height: 100vh;
+  background-position: center;
+  background-size: cover;
+  display: table;
+  justify-content: center;
+  color: white;
+  overflow-x: hidden;
+  text-align: center;
+}
+.l-display {
+  display: table-cell;
+  vertical-align: middle;
+  padding: 0 30px;
+}
+
+#inquiry-form {
+  background: linear-gradient(rgba(0, 0, 0, 0.45), rgba(0, 0, 0, 0.45)),
+    url(/assets/car-1.jpg);
+  min-height: 100vh;
+  background-position: center;
+  background-size: cover;
+}
+/* .card {
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+  transition: 0.3s;
+  width: 85%;
+  height: 45rem;
+  background: white;
+  /* display: flex !important;
+  justify-content: center;
+  align-items: center; 
+  border-radius: 5%;
+} */
+
+/* .mre-inf {
+  display: flex;
+  flex-wrap: nowrap;
+  justify-content: space-between;
+}
+.mre-info-style {
+  display: flex;
+}
+.mre-info-style i {
+  font-size: 12px;
+}
+.mre-info-style h5 {
+  margin-left: 5px;
+  font-size: 12px;
+} */
+
+/* .product-footer {
+  border-top: 1px solid;
+} */
+footer {
+  background-color: #004274;
+  color: white;
+}
+.contact {
+  display: flex;
+  flex-direction: column;
+  gap: 18px;
+}
+.footer {
+  background-color: #00335a;
+  height: 150px;
+  display: table;
+  width: 100%;
+}
+#discover {
+  min-height: 100vh;
+}
+#card {
+  margin-left: 10%;
+  margin-right: 2rem;
+  width: 80%;
+  height: 10rem;
+  margin-top: -4rem;
+}
+#card-content {
+  opacity: 1;
+}
+#search-button {
+  width: 5rem;
+}
+.btn-conatiner {
+  display: flex;
+  justify-content: center;
+}
+#card {
+  margin-left: 10%;
+  margin-right: 2rem;
+  width: 80%;
+  height: 10rem;
+  margin-top: -4rem;
+}
+#card-content {
+  opacity: 1;
+}
+#search-button {
+  width: 5rem;
+}
+.btn-conatiner {
+  display: flex;
+  justify-content: center;
+}
+form input {
+  width: 100%;
+  height: 45px;
+  border-radius: 0.25rem;
+  border: none;
+  padding-left: 10px;
+}
+form button {
+  background-color: #00aeff;
+  border-color: #00aeff;
+  color: white;
+  border-radius: 5px;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  padding-left: 30px;
+  padding-right: 30px;
+  margin-left: 50px;
+}
+.row {
+  --bs-gutter-x: 0rem !important;
+}
+.fter .row {
+  text-align: center;
+}
+.fter {
+  display: table-cell;
+  vertical-align: middle;
+}
+.in-contact {
+  display: flex;
+  flex-wrap: nowrap;
+}
+.in-contact p {
+  font-size: 15px;
+  padding-left: 20px;
+}
+.futer {
+  padding: 80px;
+  padding-top: 70px;
+  padding-bottom: 70px;
+}
+.futer h5 {
+  padding-bottom: 30px;
+}
+.big {
+  font-size: 30px;
+}
+.socials {
+  display: flex;
+  justify-content: flex-end;
+  gap: 10px;
+  padding-top: 20px;
+  padding-right: 50px;
+}
+.copyright {
+  display: flex;
+  justify-content: flex-end;
+  padding-top: 20px;
+  padding-right: 80px;
+}
+
+.bucket {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  width: 400px;
+  /* height: 250px; */
+  position: relative;
+  margin: 10px;
+}
+.proj_img {
+  display: block;
+  width: 399px;
+  height: auto;
+  object-fit: cover;
+  border: 6px solid white;
+  border-radius: 6px;
+  /* box-shadow: 8px 8px 15px #e4e4e4; */
+}
+.overlay {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  height: 100%;
+  width: 100%;
+  /* opacity: 0.2; */
+  transition: 0.3s ease;
+  background: rgba(0, 0, 0, 0.6);
+  border-radius: 6px;
+  color: #004274;
+}
+.bucket:hover .overlay {
+  opacity: 0.1;
+  /* border-bottom: 1px solid #000; */
+}
+.listings {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  padding-bottom: 30px;
+}
+
+.text-product {
+  text-align: center;
+  position: relative;
+  top: 100px;
+  color: white;
+  margin-top: 90px;
+}

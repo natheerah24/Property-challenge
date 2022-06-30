@@ -1,0 +1,332 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor"
+      crossorigin="anonymous"
+    />
+    <link rel="stylesheet" href="/style.css" />
+    <script
+      src="https://kit.fontawesome.com/f00b55dab7.js"
+      crossorigin="anonymous"
+    ></script>
+  </head>
+  <body>
+    <section id="Landing">
+      <button><a href="./admin.html">Admin Page</a></button>
+      <div class="l-display">
+        <h1>Welcome to Houzez</h1>
+        <h3>
+          Houzez is an innovative real estate WordPress theme that helps to
+          ensure your website's success in this super-competitive market.
+        </h3>
+      </div>
+
+      <div class="row">
+        <div class="col-md-6"></div>
+      </div>
+    </section>
+    <div id="card" class="card shadow-lg">
+      <div class="row p-3" id="card-content">
+        <div class="col-lg-3">
+          <p class="text-dark">looking for</p>
+          <div>
+      <label for="propertySort" class="form-label"> Sort by property type:</label>
+      <select
+        name="propertySort"
+        id="propertySort"
+        onchange="propertySort()"
+      >
+        <option value="all">all</option>
+        <option value="Apartment">Apartment</option>
+        <option value="Complex">Complex</option>
+        <option value="Loft">Loft</option>
+      </select>
+    </div>
+        </div>
+        <div class="col-lg-3">
+          <p>location</p>
+             <div>
+      <label for="LocationSort" class="form-label"> Sort by location:</label>
+      <select
+        name="LocationSort"
+        id="LocationSort"
+        onchange="LocationSort()"
+      >
+        <option value="all">all</option>
+        <option value="New York">New York</option>
+        <option value="Los Angeles">Los Angeles</option>
+        <option value="Miami">Miami</option>
+        <option value="chicago">chicago</option>
+      </select>
+    </div>
+        </div>
+        <div class="col-lg-3">
+          <p>Property Size</p>
+           <div>
+      <label for="bedroomsSort" class="form-label"> Sort by bedrooms:</label>
+      <select
+        name="bedroomsSort"
+        id="bedroomsSort"
+        onchange="bedroomsSort()"
+      >
+        <option value="all">all</option>
+        <option value="1">1</option>
+        <option value="2">2</option>
+        <option value="3">3</option>
+        <option value="4">4</option>
+        <option value="5">5</option>
+      </select>
+    </div>
+        </div>
+        <div class="col-lg-3">
+          <p>Your Budget</p>
+          <div>
+      <label for="priceSort" class="form-label"> Sort by price:</label>
+      <select
+        name="priceSort"
+        id="priceSort"
+        onchange="priceSort()"
+      >
+        <option value="all">all</option>
+          <option value="$1,600/mo">$1,600/mo</option>
+           <option value="$2,800/mo">$2,800/mo</option>
+           <option value="$3,500/mo">$3,500/mo</option>
+          <option value="$3,700/mo">$3,700/mo</option>
+           <option value="$3,750/mo">$3,750/mo</option>
+          <option value="$4,500/mo">$4,500/mo</option>
+            <option value="$11,000/mo">$11,000/mo</option>
+           <option value="$13,000/mo">$13,000/mo</option>
+      </select>
+    </div>
+        </div>
+        <div class="btn-conatiner">
+          <button id="search-button" class="btn m-2">search</button>
+        </div>
+      </div>
+    </div>
+    <section>
+      <div class="container">
+        <div class="row">
+          <div id="listings" class="listings">
+            <h1>Check Our Selection Of Finest Properties</h1>
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit</p>
+        </div>
+      </div>
+    </section>
+
+    <!-- <section id="listings">
+      <div class="products">
+        <div class="product-card">
+          <div class="cell-1">
+            <div class="product-image">
+              <div class="image-container">
+                <img src="./assets//car-1.jpg" />
+              </div>
+            </div>
+            <div class="cell-2">
+              <div class="product-info">
+                <h4>Design apartment</h4>
+                <p>Quincy St, Broadway, New York, NY 33135, USA</p>
+                <div class="icons">
+                  <i class="fa-solid fa-bed">3</i>
+                  <i class="fa-solid fa-shower">2</i>
+                  <i class="fa-solid fa-car">1</i>
+                  <i class="fa-solid fa-ruler-combined"></i>
+                  <p>2560 Sq Ft</p>
+                </div>
+                <h5>Apartment</h5>
+              </div>
+            </div>
+          </div>
+          <div class="product-footer">
+            <div class="mre-inf">
+              <div class="mre-info-style">
+                <i class="fa-solid fa-user"></i>
+
+                <h5>Michelle Ramirez</h5>
+              </div>
+              <div class="mre-info-style">
+                <i class="fa-solid fa-paperclip"></i>
+                <h5>2 years ago</h5>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="product-card">
+          <div class="cell-1">
+            <div class="product-image">
+              <div class="image-container">
+                <img src="./assets//car-2.jpg" />
+              </div>
+            </div>
+            <div class="cell-2">
+              <div class="product-info">
+                <h4>Renovated Studio</h4>
+                <p>194 Mercer Street, 627 Broadway, New York, NY 10012, USA</p>
+                <div class="icons">
+                  <i class="fa-solid fa-bed">4</i>
+                  <i class="fa-solid fa-shower">2</i>
+                  <i class="fa-solid fa-car">1</i>
+                  <i class="fa-solid fa-ruler-combined"></i>
+                  <p>1200 Sq Ft</p>
+                </div>
+                <h5>Studio</h5>
+              </div>
+            </div>
+          </div>
+          <div class="product-footer">
+            <div class="mre-inf">
+              <div class="mre-info-style">
+                <i class="fa-solid fa-user"></i>
+
+                <h5>Mike Moore</h5>
+              </div>
+              <div class="mre-info-style">
+                <i class="fa-solid fa-paperclip"></i>
+                <h5>2 years ago</h5>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="product-card">
+          <div class="cell-1">
+            <div class="product-image">
+              <div class="image-container">
+                <img src="./assets//car-3.jpg" />
+              </div>
+            </div>
+            <div class="cell-2">
+              <div class="product-info">
+                <h4>New apartment nice view</h4>
+                <p>8100 S Ashland Ave, Chicago, IL 60620, USA</p>
+                <div class="icons">
+                  <i class="fa-solid fa-bed p-1">3</i>
+                  <i class="fa-solid fa-shower">1</i>
+                  <i class="fa-solid fa-car">1</i>
+                  <i class="fa-solid fa-ruler-combined"></i>
+                  <p>1789 Sq Ft</p>
+                </div>
+                <h5>Apartment</h5>
+              </div>
+            </div>
+          </div>
+          <div class="product-footer">
+            <div class="mre-inf">
+              <div class="mre-info-style">
+                <i class="fa-solid fa-user"></i>
+
+                <h5>Samuel Palmer</h5>
+              </div>
+              <div class="mre-info-style">
+                <i class="fa-solid fa-paperclip"></i>
+                <h5>2 years ago</h5>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section> -->
+    <footer>
+      <div class="row futer">
+        <div class="col-sm-4">
+          <h5>Discover</h5>
+          <p>>Miami</p>
+          <p>>Los Angeles</p>
+          <p>>Chicago</p>
+          <p>>New York</p>
+        </div>
+        <div class="col-sm-4">
+          <h5>Contact us</h5>
+          <div class="contact">
+            <div class="in-contact">
+              <i class="fa-solid fa-location-dot"></i>
+              <p>774 NE 84th St Miami, FL 33879</p>
+            </div>
+            <div class="in-contact">
+              <i class="fa-solid fa-phone"></i>
+
+              <p>987 654 9875</p>
+            </div>
+            <div class="in-contact">
+              <i class="fa-solid fa-fax"></i>
+
+              <p>879 456 1349</p>
+            </div>
+            <div class="in-contact">
+              <i class="fa-solid fa-envelope"></i>
+
+              <p>email@houzez.co</p>
+            </div>
+          </div>
+        </div>
+        <div class="col-sm-4">
+          <h5>Newsletter</h5>
+          <div class="input-submit">
+            <form action="https://formspree.io/f/xlezkake" method="POST">
+              <label>
+                <input
+                  type="text"
+                  name="Newsletter"
+                  placeholder="Enter your email"
+                />
+              </label>
+
+              <button type="submit">Submit</button>
+            </form>
+            <p>
+              Houzez is a premium WordPress theme for Designers & Real Estate
+              Agents.
+            </p>
+          </div>
+        </div>
+      </div>
+      <div class="footer">
+        <div class="fter">
+          <div class="row">
+            <div class="col-md-4">
+              <div class="copyright">
+                <p>© Houzez - All rights reserved</p>
+              </div>
+            </div>
+            <div class="col-md-4">
+              <div class="big">
+                <i class="fa-solid fa-location-dot"></i>
+                houzez
+              </div>
+            </div>
+            <div class="col-md-4">
+              <div class="socials">
+                <i class="fa-brands fa-facebook-f"></i>
+                <i class="fa-brands fa-twitter"></i>
+                <i class="fa-brands fa-google-plus-g"></i>
+                <i class="fa-brands fa-linkedin-in"></i>
+                <i class="fa-brands fa-instagram"></i>
+                <i class="fa-brands fa-pinterest-p"></i>
+                <i class="fa-brands fa-yelp"></i>
+                <i class="fa-brands fa-youtube"></i>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </footer>
+    <script src="./admin.js"></script>
+    <script
+      src="https://cdn.jsdelivr.net/npm/jquery@3.5.1/dist/jquery.slim.min.js"
+      integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-pprn3073KE6tl6bjs2QrFaJGz5/SUsLqktiwsUTF55Jfv3qYSDhgCecCxMW52nD2"
+      crossorigin="anonymous"
+    ></script>
+  </body>
+</html>
