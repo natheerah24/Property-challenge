@@ -6,6 +6,10 @@
 body {
   background-color: #00335a;
 }
+html,
+body {
+  overflow-x: hidden;
+}
 .icons i {
   margin: 8px;
 }
