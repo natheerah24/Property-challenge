@@ -6,7 +6,10 @@
 body {
   background-color: #00335a;
 }
-
+html,
+body {
+  overflow-x: hidden;
+}
 .icons i {
   margin: 8px;
 }
@@ -284,7 +287,8 @@ td:hover {
   }
   body {
     background-color: #00335a;
-    padding-left: 10px;
+    /* padding-left: 10px;
+    padding-right: 10px; */
   }
   .socials {
     display: flex;
