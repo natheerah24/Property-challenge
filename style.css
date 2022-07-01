@@ -6,10 +6,7 @@
 body {
   background-color: #00335a;
 }
-html,
-body {
-  overflow-x: hidden;
-}
+
 .icons i {
   margin: 8px;
 }
@@ -299,6 +296,10 @@ td:hover {
   .admin-btn {
     margin-top: 20px;
     padding-left: 56px;
+  }
+  tr {
+    display: flex;
+    flex-direction: column;
   }
 }
 .card-admin {
