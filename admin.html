@@ -26,7 +26,92 @@
     <button class="btn btn-primary">
       <a href="./index.html"> Head back</a>
     </button>
-
+    <div id="card-admin" class="card shadow-lg">
+      <div class="row p-3" id="card-content">
+        <div class="col-lg-3">
+          <p>Looking for</p>
+          <div>
+            <label for="propertySort" class="form-label">
+              Sort by property type:</label
+            >
+            <select
+              name="propertySort"
+              id="propertySort"
+              onchange="propertySort()"
+              class="sorting"
+            >
+              <option value="all">all</option>
+              <option value="Apartment">Apartment</option>
+              <option value="Complex">Complex</option>
+              <option value="Loft">Loft</option>
+            </select>
+          </div>
+        </div>
+        <div class="col-lg-3">
+          <p>Location</p>
+          <div>
+            <label for="LocationSort" class="form-label">
+              Sort by location:</label
+            >
+            <select
+              name="LocationSort"
+              id="LocationSort"
+              onchange="LocationSort()"
+              class="sorting"
+            >
+              <option value="all">all</option>
+              <option value="New York">New York</option>
+              <option value="Los Angeles">Los Angeles</option>
+              <option value="Miami">Miami</option>
+              <option value="chicago">chicago</option>
+            </select>
+          </div>
+        </div>
+        <div class="col-lg-3">
+          <p>Property Size</p>
+          <div>
+            <label for="bedroomsSort" class="form-label">
+              Sort by bedrooms:</label
+            >
+            <select
+              name="bedroomsSort"
+              id="bedroomsSort"
+              onchange="bedroomsSort()"
+              class="sorting"
+            >
+              <option value="all">all</option>
+              <option value="1">1</option>
+              <option value="2">2</option>
+              <option value="3">3</option>
+              <option value="4">4</option>
+              <option value="5">5</option>
+            </select>
+          </div>
+        </div>
+        <div class="col-lg-3">
+          <p>Your Budget</p>
+          <div>
+            <label for="priceSort" class="form-label"> Sort by price:</label>
+            <select
+              name="priceSort"
+              id="priceSort"
+              onchange="priceSort()"
+              class="sorting"
+            >
+              <option value="all">all</option>
+              <option value="$1,600/mo">$1,600/mo</option>
+              <option value="$2,800/mo">$2,800/mo</option>
+              <option value="$3,500/mo">$3,500/mo</option>
+              <option value="$3,700/mo">$3,700/mo</option>
+              <option value="$3,750/mo">$3,750/mo</option>
+              <option value="$4,500/mo">$4,500/mo</option>
+              <option value="$11,000/mo">$11,000/mo</option>
+              <option value="$13,000/mo">$13,000/mo</option>
+            </select>
+          </div>
+        </div>
+      </div>
+    </div>
     <div>
       <div
         class="modal fade"
@@ -112,7 +197,7 @@
     </div>
     <!-- table -->
 
-    <table class="table table-bordered">
+    <table class="container-fluid table table-bordered">
       <thead class="table-primary">
         <tr>
           <th scope="col">ID</th>
@@ -120,7 +205,7 @@
           <th scope="col">Bedrooms</th>
           <th scope="col">Price</th>
           <th scope="col">ImgURL</th>
-          <th scope="col">locations</th>
+          <th scope="col">Locations</th>
           <th scope="col">Location</th>
           <th scope="col">Type</th>
           <th scope="col">Bathroom</th>

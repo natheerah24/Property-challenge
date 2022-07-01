@@ -297,3 +297,17 @@ td:hover {
     padding-left: 56px;
   }
 }
+.card-admin {
+  margin-left: 10%;
+  margin-right: 2rem;
+  width: 80%;
+  height: 10rem;
+  margin-top: -4rem;
+  background-color: #004274;
+  color: white;
+  margin-bottom: 2rem;
+}
+div#card-content {
+  background-color: #004274;
+  color: white;
+}
